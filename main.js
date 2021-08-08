@@ -6,6 +6,13 @@ setInterval(function () {
 
 var args = process.argv.slice(2);
 let num = args;
+// console.log(num);
+// console.log(typeof num);
+
+if (num.length == 0) {
+    console.log("Fail: Enter a number\n");
+    process.exit(1);
+}
 // //process.stdout.write("Hi ");
 
 start(num);
