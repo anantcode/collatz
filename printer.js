@@ -20,17 +20,12 @@ class Printer {
     }
 
     renderPage() {
+        console.clear();
+        for (const property in this.page) {
+            console.log(`${property}: ${this.page[property]}`);
+        }
         console.log("Page Rendered!");
     }
 }
-
-// function updatePage(n) {
-//     console.log(`Page Updated! with ${n}`);
-//     //TODO update page object
-// }
-
-// function renderPage() {
-//     console.log("Page Rendered!");
-// }
 
 module.exports = new Printer();

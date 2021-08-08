@@ -1,6 +1,10 @@
 const printer = require("./printer");
 
+var args = process.argv.slice(2);
+let num = args;
 //process.stdout.write("Hi ");
+
+start(num);
 
 function start(n) {
     while (1) {
@@ -12,5 +16,3 @@ function start(n) {
         printer.print(n);
     }
 }
-
-start(3);
